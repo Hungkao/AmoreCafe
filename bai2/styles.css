@@ -97,6 +97,7 @@ main {
   gap: 20px;
 }
 
+/* Mỗi thẻ sản phẩm */
 .product {
   flex: 1 1 30%;
   max-width: 300px;
@@ -106,19 +107,24 @@ main {
   padding: 15px;
   text-align: center;
   transition: transform 0.2s, box-shadow 0.2s;
+
+  /* thêm để căn đều chiều cao */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 430px;
 }
 
-.product:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Ảnh có cùng kích thước */
 .product img {
   width: 100%;
+  height: 200px; /* đồng bộ chiều cao */
+  object-fit: cover; /* cắt ảnh cho đẹp */
   border-radius: 10px;
   margin-bottom: 10px;
 }
 
+/* Tiêu đề và mô tả */
 .product h3 {
   color: #3e2723;
   font-size: 1.1rem;
@@ -130,9 +136,18 @@ main {
   margin-bottom: 5px;
 }
 
+/* Giá tiền căn đều đáy */
 .price {
   color: #c77b30;
   font-weight: bold;
+  margin-top: auto; /* đẩy xuống cuối khung sản phẩm */
+  font-size: 1rem;
+}
+
+/* Hiệu ứng hover */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* -------------------------------
@@ -206,6 +221,7 @@ footer {
 @media (max-width: 900px) {
   .product {
     flex: 1 1 45%;
+    height: auto;
   }
 }
 
@@ -228,6 +244,7 @@ footer {
   .product {
     flex: 1 1 100%;
     max-width: 90%;
+    height: auto;
   }
 
   header h1 {
