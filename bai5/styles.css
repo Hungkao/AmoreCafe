@@ -1,5 +1,5 @@
 /* -------------------------------
-    🌿 RESET VÀ CÀI ĐẶT CHUNG
+     RESET VÀ CÀI ĐẶT CHUNG
   -------------------------------- */
 * {
   margin: 0;
@@ -15,7 +15,7 @@ body {
 }
 
 /* -------------------------------
-    ☕ HEADER
+     HEADER
   -------------------------------- */
 header {
   background-color: #3e2723; /* nâu đậm */
@@ -58,7 +58,7 @@ nav ul li a:hover {
 }
 
 /* -------------------------------
-    📄 MAIN
+     MAIN
   -------------------------------- */
 main {
   margin-top: 120px; /* chừa chỗ cho header cố định */
@@ -66,7 +66,7 @@ main {
 }
 
 /* -------------------------------
-    🌸 GIỚI THIỆU (Intro Section)
+     GIỚI THIỆU (Intro Section)
   -------------------------------- */
 .intro {
   text-align: center;
@@ -82,7 +82,7 @@ main {
 }
 
 /* -------------------------------
-    🔍 THANH TÌM KIẾM
+     THANH TÌM KIẾM
   -------------------------------- */
 .search-section {
   text-align: center;
@@ -113,7 +113,7 @@ main {
 }
 
 /* -------------------------------
-    🛍️ DANH SÁCH SẢN PHẨM
+     DANH SÁCH SẢN PHẨM
   -------------------------------- */
 .products h2 {
   text-align: center;
@@ -180,7 +180,7 @@ main {
 }
 
 /* -------------------------------
-    🧩 NÚT THÊM SẢN PHẨM
+     NÚT THÊM SẢN PHẨM
   -------------------------------- */
 .add-product-container {
   text-align: center;
@@ -203,7 +203,7 @@ main {
 }
 
 /* -------------------------------
-    📝 FORM THÊM SẢN PHẨM
+     FORM THÊM SẢN PHẨM
   -------------------------------- */
 #addProductForm {
   max-width: 400px;
@@ -266,7 +266,7 @@ main {
 }
 
 /* -------------------------------
-    📬 FORM LIÊN HỆ
+     FORM LIÊN HỆ
   -------------------------------- */
 .contact {
   background-color: #fff8e1;
@@ -319,7 +319,7 @@ button:hover {
 }
 
 /* -------------------------------
-    🦶 FOOTER
+     FOOTER
   -------------------------------- */
 footer {
   text-align: center;
@@ -331,7 +331,7 @@ footer {
 }
 
 /* -------------------------------
-    📱 RESPONSIVE DESIGN
+     RESPONSIVE DESIGN
   -------------------------------- */
 @media (max-width: 900px) {
   .product {
