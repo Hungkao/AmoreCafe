@@ -1,174 +1,225 @@
-/* ======= RESET & GLOBAL ======= */
+/* -------------------------------
+   🌿 RESET VÀ CÀI ĐẶT CHUNG
+-------------------------------- */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fffaf3;
-  color: #3c2a1e;
-  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* ======= HEADER ======= */
+/* -------------------------------
+   ☕ HEADER
+-------------------------------- */
 header {
-  background-color: #4b2e1a;
+  background-color: #3e2723; /* nâu đậm */
   color: white;
-  text-align: center;
-  padding: 20px 10px;
-  position: sticky;
+  padding: 15px 20px;
+  /* position: fixed; header cố định trên cùng */
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1000;
 }
 
+header h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* NAV MENU */
 nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
-  font-weight: bold;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* ======= INTRO ======= */
+/* -------------------------------
+   📄 MAIN
+-------------------------------- */
+main {
+  margin-top: 120px; /* chừa chỗ cho header cố định */
+  padding: 20px;
+}
+
+/* -------------------------------
+   🌸 GIỚI THIỆU (Intro Section)
+-------------------------------- */
 .intro {
   text-align: center;
+  background-color: #fff3e0;
   padding: 40px 20px;
-  background-color: #f7efe5;
-}
-
-/* ======= PRODUCTS ======= */
-.products {
-  position: relative;
-  padding-top: 100px;
-  margin: 50px auto;
-  max-width: 1100px;
-}
-
-.products h2 {
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.8);
-  padding: 10px 25px;
   border-radius: 10px;
-  font-size: 1.8em;
-  font-weight: bold;
-  color: #4b2e1a;
-  z-index: 2;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.intro h2 {
+  color: #5d4037;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------
+   🛍️ DANH SÁCH SẢN PHẨM
+-------------------------------- */
+.products h2 {
+  text-align: center;
+  color: #5d4037;
+  margin-bottom: 20px;
 }
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
 }
 
 .product {
-  background: #fff;
-  border: 1px solid #e2d5c3;
+  flex: 1 1 30%;
+  max-width: 300px;
+  border: 1px solid #ddd;
   border-radius: 10px;
+  background: #fff;
   padding: 15px;
   text-align: center;
-  flex: 1 1 30%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .product:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .product h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #4b2e1a;
+  color: #3e2723;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
 }
 
-.product .price {
-  margin-top: 10px;
+.product p {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #c77b30;
   font-weight: bold;
-  color: #a0522d;
 }
 
-/* ======= CONTACT FORM ======= */
+/* -------------------------------
+   📬 FORM LIÊN HỆ
+-------------------------------- */
 .contact {
+  background-color: #fff8e1;
+  padding: 40px 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.contact h2 {
   text-align: center;
-  padding: 50px 20px;
-  background-color: #f7efe5;
+  color: #5d4037;
+  margin-bottom: 20px;
 }
 
 form {
   max-width: 400px;
-  margin: 20px auto;
-  text-align: left;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-  display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  color: #3e2723;
 }
 
 input,
 textarea {
-  width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
 button {
-  background-color: #4b2e1a;
+  background-color: #5d4037;
   color: white;
   border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 10px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-  background-color: #7b4b2a;
+  background-color: #8d6e63;
 }
 
-/* ======= FOOTER ======= */
+/* -------------------------------
+   🦶 FOOTER
+-------------------------------- */
 footer {
   text-align: center;
+  background-color: #3e2723;
+  color: #ddd;
   padding: 15px 0;
-  background-color: #4b2e1a;
-  color: #fff;
-  font-size: 0.9em;
   margin-top: 40px;
+  font-size: 0.9rem;
 }
 
-/* ======= RESPONSIVE ======= */
-@media (max-width: 768px) {
+/* -------------------------------
+   📱 RESPONSIVE DESIGN
+-------------------------------- */
+@media (max-width: 900px) {
+  .product {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
   .product-list {
     flex-direction: column;
     align-items: center;
@@ -179,16 +230,27 @@ footer {
     max-width: 90%;
   }
 
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  main {
+    margin-top: 140px;
+  }
+}
+/* ======= Responsive Design ======= */
+@media (max-width: 600px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
   nav ul {
     flex-direction: column;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  .products h2 {
-    font-size: 1.4em;
-    padding: 8px 18px;
+    gap: 10px;
   }
 }
